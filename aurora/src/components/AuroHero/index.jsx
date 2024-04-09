@@ -23,16 +23,11 @@ export default function AuroraHero() {
       repeatType: "mirror",
     });
   }, [color]);
-  const backgroundImage = useMotionTemplate`radial-gradient(130% 130% at 50% 0%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(110% 110% at 50% 0%, #020617 50%, ${color})`;
 
   return (
     <div className={styles.main}>
       <motion.section style={{ backgroundImage }} className={styles.section}>
-        <div className={styles.stars}>
-          {/* <Canvas>
-            <Stars radius={50} count={2500} factor={4} fade speed={2} />
-          </Canvas> */}
-        </div>
       </motion.section>
     </div>
   );
