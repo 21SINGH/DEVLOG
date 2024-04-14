@@ -23,6 +23,7 @@ export default function AuroraHero() {
       repeatType: "mirror",
     });
   }, [color]);
+
   const backgroundImage = useMotionTemplate`radial-gradient(110% 110% at 50% 0%, #020617 50%, ${color})`;
 
   return (
